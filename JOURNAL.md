@@ -25,3 +25,9 @@
 - Sadece mevcut nesnenin adresini (anahtarını) kopyalar.
 - İki referans da Heap'teki aynı nesneyi işaret eder. 
 - Birinden yapılan değişiklik diğerini de etkiler. Buna **"Aliasing"** denir.
+>new keywordu yok bak çünkü. 
+
+>StackOverflowError: Sınıf seviyesinde (metod dışında) new Student(...) diyerek kendi tipinden >bir nesne üretmeye çalıştığımda sonsuz bir döngü oluştuğunu ve Stack belleğinin saniyeler >içinde taştığını gördüm. Nesne üretim emirlerini main gibi metodların içine alarak bu düğümü >çözdüm.
+
+
+

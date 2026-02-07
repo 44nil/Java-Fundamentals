@@ -1,3 +1,12 @@
+/*
+ * ARRAYLIST FUNDAMENTALS:
+ * 1. ArrayList is a dynamic array (Resizes itself automatically).
+ * 2. It lives in the HEAP, while its reference is on the STACK.
+ * 3. Unlike Arrays, it only stores OBJECTS (Reference Types).
+ * 4. Key Methods: .add(), .get(), .set(), .remove(), .size(), .contains().
+ * RESULT: Flexible and powerful way to manage collections of data.
+ */
+
 import java.util.ArrayList;
 
 public class ListPractice{
@@ -34,10 +43,13 @@ public class ListPractice{
             System.out.println("\nAnkara is still in the list! ✅");
         }
 
-        //cities.add(35);
+        //cities.add(35)
+
         // 8. Listeyi tamamen boşaltma
         cities.clear();
         System.out.println("\nAll cities cleared. Current size: " + cities.size());
 
     }
 }
+
+
