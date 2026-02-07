@@ -17,6 +17,7 @@ public class Student {
     double gpa;
     boolean isSenior;
 
+    // 2. Constructor
     public Student(String name, String university, double gpa ) {
     this.name = name;
     this.university = university;
@@ -27,18 +28,19 @@ public class Student {
         System.out.println(name + " is studying for the Engineering exams...");
     }
 
-
+    //Main Method
     public static void main(String[] args) {
         //1. create an object
         Student esra = new Student("Esra Nil", "KGTU", 3.17);
-
         esra.isSenior = true;
+        
         esra.study();
 
-        Student copyEsra = esra;
+        Student copyEsra = esra; // because of the we dont have new keyword,
+        // that mean is its we dont create new object, it is new key
         copyEsra.name = "Ayşe";
 
-        System.out.println("Current Name: " + esra.name); //ayşe yazmalı 
+        System.out.println("Current Name: " + esra.name); //ayşe yazmalı
         
     }
     
