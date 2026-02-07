@@ -5,5 +5,6 @@
         "strings": "off"
     },
     "editor.suggestOnTriggerCharacters": false,
-    "editor.acceptSuggestionOnEnter": "off"
+    "editor.acceptSuggestionOnEnter": "off",
+    "commentTranslate.targetLanguage": "en"
 }

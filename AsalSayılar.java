@@ -13,6 +13,6 @@ public class AsalSayılar {
             if (asalMi) {
                 System.out.println(sayi + " asal.");
             }
-        }  // Dış döngü BU satırda bitiyor!
+        }  // The outer loop ends at THIS line!
     }
 }
