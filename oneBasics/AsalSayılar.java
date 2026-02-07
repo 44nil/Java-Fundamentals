@@ -1,3 +1,4 @@
+
 public class AsalSayılar {
     public static void main(String[] args) {
         for (int sayi = 1; sayi <= 50; sayi++) {

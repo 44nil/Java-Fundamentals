@@ -1,3 +1,4 @@
+
 public class Degiskenler {
     public static void main(String[] args) {
         int yas = 21;
