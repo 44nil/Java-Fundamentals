@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class ListPractice{
     public static void main(String[] args) {
         //1. Definition:Creating a dynamic list of strings
-        ArrayList<String> cities = new ArrayList<>();
+        ArrayList<String> cities = new ArrayList<>(); // key is on stack, box is in Heap!
 
         //2. Adding elements (.add)
         cities.add("Aydin");
@@ -34,7 +34,7 @@ public class ListPractice{
             System.out.println("\nAnkara is still in the list! ✅");
         }
 
-        cities.add(35);
+        //cities.add(35);
 
     }
 }
