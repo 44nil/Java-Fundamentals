@@ -35,6 +35,9 @@ public class ListPractice{
         }
 
         //cities.add(35);
+        // 8. Listeyi tamamen boşaltma
+        cities.clear();
+        System.out.println("\nAll cities cleared. Current size: " + cities.size());
 
     }
 }
