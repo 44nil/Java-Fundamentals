@@ -37,9 +37,9 @@ public class EncapsulatedStudent {
     }
 
     public static void main(String[] args) {
-        EncapsulatedStudent esra = new EncapsulatedStudent("Esra Nile", 3.17, 4);
+        EncapsulatedStudent esra = new EncapsulatedStudent("Esra Nil", 3.17, 4);
 
-        // Veriyi çekmek için artık getter kullanıyoruz
+        //We now use getter to fetch data
         System.out.println("Student: " + esra.getName());
         System.out.println("Current GPA: " + esra.getGpa());
 
