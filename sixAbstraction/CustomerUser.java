@@ -7,6 +7,6 @@ public class CustomerUser extends BaseUser {
 
     @Override
     public void login() {
-        System.out.println("Customer " + getEmail() + "is viweing the menu...");
+        System.out.println("Customer " + getEmail() + " is viweing the menu...");
     }
 }

@@ -62,3 +62,17 @@ Neden Yapıldı: Kimsenin yanlışlıkla "içi boş" bir BaseUser oluşturmasın
 Mühendislik Notu: public abstract void login(); diyerek metodun gövdesini sildik. "Herkes giriş yapmalı ama nasıl yapacağını çocuk sınıflar kendi belirlemeli" kuralını (Abstract Method) koyduk.
 
 Mimari Karar: Mimari bir kural seti oluşturuldu. Sisteme eklenecek her yeni sınıf, belirlenen bu soyut standartlara uymak zorunda bırakıldı.
+
+
+## [18.02.2026] -The Grand Finale (Abstraction & Interfaces) 🏗️🎭
+
+### 🏗️ Abstraction (Soyutlama) Tamamlandı
+- **Ne Yapıldı:** `BaseUser` sınıfı `abstract` yapıldı, `login()` metodu soyut bir kural haline getirildi.
+- **Mühendislik Kazanımı:** Kimse doğrudan "boş" bir kullanıcı oluşturamaz hale geldi. Her kullanıcı tipi kendi giriş mantığını yazmak zorunda bırakıldı.
+
+### 🎭 Interface (Arayüz) Gücü
+- **Ne Yapıldı:** `Deletable` adında bir yetenek (interface) oluşturuldu ve sadece `AdminUser` sınıfına uygulandı.
+- **Mühendislik Kazanımı:** "Is-a" (Kalıtım) ile "Can-do" (Yetenek) arasındaki fark netleştirildi. Admin bir kullanıcıdır (Inheritance) ve silme yeteneğine sahiptir (Interface).
+
+### 🚀 Polymorphism (Çok Biçimlilik) Kanıtı
+- **Sonuç:** Tek bir `ArrayList<BaseUser>` içinde farklı tipler yönetildi. Java, çalışma anında hangi metodun çağrılacağına hatasız karar verdi.

@@ -5,7 +5,7 @@ package sixAbstraction;
  * It reuses common user fields like email and password.
  */
 
-public class AdminUser extends BaseUser {
+public class AdminUser extends BaseUser implements Deletable {
     // An additional field specific only to Admin
     private int authLevel;
 
@@ -19,11 +19,17 @@ public class AdminUser extends BaseUser {
         this.authLevel = authLevel;
     }
 
+    @Override 
+    public void login() {
+        System.out.println("Admin " + getEmail() + " has logged in with authority level " + authLevel);
+    }
+
     /**
      * A behavior unique to AdminUser
      */
-    public void deleteUser() {
-        System.out.println("User deleted by admin with level: " + authLevel);
+    @Override
+    public void deleteUser(String userId) {
+        System.out.println("Admin (Level " + authLevel + ") is deleting user: " + userId);
     }
 
     //Getter for Admin-specific field
@@ -31,10 +37,5 @@ public class AdminUser extends BaseUser {
         return authLevel;
     }
 
-    // TEST 
-    public static void main(String[] args) {
-        AdminUser admin = new AdminUser("esranil@gmail.com", "secret123", 5);
-        admin.login(); // Inherited from BaseUser
-        admin.deleteUser(); // Exclusive to admin
-    }
+
 }
